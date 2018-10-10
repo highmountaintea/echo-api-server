@@ -2,11 +2,13 @@
 
 require('dotenv').config();
 const express = require('express');
+const cors = require('cors');
 const bodyParser = require('body-parser');
 
 let port = process.env.PORT == null ? 3007 : parseInt(process.env.PORT, 10);
 
 const app = express();
+app.use(cors());
 app.use(bodyParser.json());
 
 app.get('/echo/:message', (req, res) => {
