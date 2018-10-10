@@ -1,7 +1,7 @@
 {
   "name": "echo-api",
-  "version": "1.0.0",
-  "description": "It echoes whatever you send",
+  "version": "1.0.1",
+  "description": "an API server that echos back whatever message it receives",
   "main": "index.js",
   "bin": {
     "echo-api": "./index.js"

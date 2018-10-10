@@ -1,6 +1,6 @@
 # echo-api
 
-This simple server will echo back whatever is sent to it. It is a pure JSON API server.
+This simple server will echo back whatever message it receives. It is a pure JSON API server.
 
 ## Usage
 
