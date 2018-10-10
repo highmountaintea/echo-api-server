@@ -1,5 +1,5 @@
 {
-  "name": "echo-api-server",
+  "name": "echo-api",
   "version": "0.1.0",
   "description": "It echoes whatever you send",
   "main": "index.js",
