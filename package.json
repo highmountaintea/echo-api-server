@@ -1,0 +1,24 @@
+{
+  "name": "echo-api-server",
+  "version": "0.1.0",
+  "description": "It echoes whatever you send",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/highmountaintea/echo-api-server.git"
+  },
+  "author": "highmountaintea",
+  "keywords": [
+    "echo",
+    "server",
+    "api"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/highmountaintea/echo-api-server/issues"
+  },
+  "homepage": "https://github.com/highmountaintea/echo-api-server#readme"
+}
