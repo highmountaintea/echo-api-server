@@ -4,22 +4,26 @@ This simple server will echo back whatever is sent to it. It is a pure JSON API 
 
 ## Usage
 
-`echo-api` server can accept either GET or POST requests.
+Start echo-api server by running the following in terminal:
+```
+npx echo-api
+```
+This will start the echo-api server on port 3007.
 
-### GET request example
 
-Send this GET request `/echo/ThisIsTestMessage`, and you will get back:
+### GET request
+
+Open a browser and go to `http://localhost:3007/echo/ThisIsTestMessage`. You should get this back:
+```
+{"echo":"ThisIsTestMessage"}
+```
+
+
+### POST request
+
+Send this POST request `http://localhost:3007/echo`, with this BODY `{ "message": "ThisIsAnotherMessage" }`, and you will get back:
 ```
 {
-  "echo": "ThisIsTestMessage"
-}
-```
-
-### POST request example
-
-Send this POST request `/echo`, with this BODY `{ "message": "ThisIsAnotherMessage" }`, and you will get back:
-```
-{
-  "echo": "ThisIsAnotherMessage"
+    "echo": "ThisIsAnotherMessage"
 }
 ```
