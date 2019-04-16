@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 
 app.get('/echo/:message', (req, res) => {
   try {
-    let output = JSON.stringify({ echo: req.params.message });
+    let output = JSON.stringify({ echo: req.params.message, extra: "newdata" });
     res.setHeader('Content-Type', 'application/json');
     res.send(output);
   } catch (e) {
