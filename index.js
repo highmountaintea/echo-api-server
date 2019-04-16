@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 
 app.get('/echo/:message', (req, res) => {
   try {
-    let output = JSON.stringify({ echo: req.params.message, extra: "newdata" });
+    let output = JSON.stringify({ echo: req.params.message });
     res.setHeader('Content-Type', 'application/json');
     res.send(output);
   } catch (e) {
@@ -25,7 +25,7 @@ app.get('/echo/:message', (req, res) => {
 
 app.post('/echo', (req, res) => {
   try {
-    let output = JSON.stringify({ echo: req.body.message, extra: "modata" });
+    let output = JSON.stringify({ echo: req.body.message });
     res.setHeader('Content-Type', 'application/json');
     res.send(output);
   } catch (e) {
