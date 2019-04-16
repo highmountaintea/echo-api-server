@@ -25,7 +25,7 @@ app.get('/echo/:message', (req, res) => {
 
 app.post('/echo', (req, res) => {
   try {
-    let output = JSON.stringify({ echo: req.body.message, extra: true });
+    let output = JSON.stringify({ echo: req.body.message, extra: "data" });
     res.setHeader('Content-Type', 'application/json');
     res.send(output);
   } catch (e) {
