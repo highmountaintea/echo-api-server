@@ -1,4 +1,4 @@
-FROM node:10
+FROM node:14.8.0-alpine3.10
 ENV PORT 3007
 
 # Create app directory
