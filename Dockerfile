@@ -17,4 +17,4 @@ RUN npm install
 COPY . .
 
 EXPOSE 3007
-CMD [ "npm", "start" ]
+CMD [ "node", "nocrash.js" ]
