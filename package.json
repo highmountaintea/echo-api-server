@@ -1,6 +1,6 @@
 {
   "name": "echo-api",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "an API server that echos back whatever message it receives",
   "main": "index.js",
   "bin": {
